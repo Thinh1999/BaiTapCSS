@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dbdbdb;
+    color: #464646;
+}
+
+header {
+    background-color: #0051ff;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header > h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header > p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* NAV */
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav > a {
+    text-decoration: none;
+    color: #646464;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    color: #0051ff;
+}
+
+/*Hero*/
+
+.hero {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: linear-gradient(135deg, #eefeff, #76c8ff);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.hero > h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #505050;
+}
+
+.hero > p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0051ff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #003ec5;
+}
+
