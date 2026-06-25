@@ -1,45 +1,107 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Web học HTML CSS</title>
-</head>
-<body>
-    <header>
-        <h1>Web Starter</h1>
-        <p>Học HTML CSS từ cơ bản đến thực hành website</p>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Web học HTML CSS</title>
+    </head>
+    <body>
+        <header>
+            <h1>Web Starter</h1>
+            <p>Học HTML CSS từ cơ bản đến thực hành website</p>
+        </header>
 
-    <nav>
-        <a href="#">Trang chủ</a>
-        <a href="#">Lợi ích</a>
-        <a href="#">Nội dung</a>
-        <a href="#">Đăng ký</a>
-    </nav>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#menu1">Lợi ích</a>
+            <a href="#menu2">Nội dung</a>
+            <a href="#register">Đăng ký</a>
+        </nav>
 
-    <section class="hero">
-        <h2>Học HTML CSS từ con số 0</h2>
-        <p>Tự xây dựng website hiện đại,đẹp mắt và responsive sau vài buổi học</p>
-        <a href="#" class="btn"> Đăng ký ngay</a>
-    </section>
+        <section class="hero">
+            <h2>Học HTML CSS từ con số 0</h2>
+            <p>Tự xây dựng website hiện đại,đẹp mắt và responsive sau vài buổi học</p>
+            <a href="#" class="btn"> Đăng ký ngay</a>
+        </section>
 
-    <section class="section">
-        <h2>Lợi ích khóa học</h2>
-        <div class="card">
-            <h3>Dễ học</h3>
-            <p>Nội dung được chia nhỏ theo từng bước rõ ràng</p>
-        </div>
-        <div class="card">
-            <h3>Thực hành nhiều</h3>
-            <p>Học viên vừa học lý thuyết vừa code trực tiếp</p>
-        </div>
-        <div class="card">
-            <h3>Có sản phẩm</h3>
-            <p>Cuối buổi học viên hoàn thành một website đơn giản</p>
-        </div>
-    </section>
-    
-</body>
+        <section class="section" id="menu1">
+            <h2>Lợi ích khóa học</h2>
+            <div class="card-list">
+                <div class="card">
+                    <h3>Dễ học</h3>
+                    <p>Nội dung được chia nhỏ theo từng bước rõ ràng</p>
+                </div>
+                <div class="card">
+                    <h3>Thực hành nhiều</h3>
+                    <p>Học viên vừa học lý thuyết vừa code trực tiếp</p>
+                </div>
+                <div class="card">
+                    <h3>Có sản phẩm</h3>
+                    <p>Cuối buổi học viên hoàn thành một website đơn giản</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="menu2">
+            <h2>Nội dung học</h2>
+            <div class="content-box">
+                <ul>
+                    <li>Buổi 1: Làm quen HTML và cấu trúc trang web.</li>
+                    <li>Buổi 2: CSS cơ bản, màu sắc, font chữ, khoảng cách.</li>
+                    <li>Buổi 3: Box Model, card UI và hiệu ứng hover.</li>
+                    <li>Buổi 4: Flexbox và responsive cho điện thoại.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Lịch học</h2>
+            <table>
+                <tr>
+                    <th>Buổi</th>
+                    <th>Thời gian</th>
+                    <th>Nội dung</th>
+                </tr>
+                <tr>
+                    <td>Buổi 1</td>
+                    <td>Thứ 2: 18:00</td>
+                    <td>HTML Cơ bản</td>
+                </tr>
+                <tr>
+                    <td>Buổi 2</td>
+                    <td>Thứ 5: 18:00</td>
+                    <td>CSS cơ bản</td>
+                </tr>
+                <tr>
+                    <td>Buổi 3</td>
+                    <td>Thứ 7: 07:30</td>
+                    <td>Box Model và hiệu ứng</td>
+                </tr>
+                <tr>
+                    <td>Buổi 4</td>
+                    <td>Chủ nhật: 13:00</td>
+                    <td>Flexbox và responsive</td>
+                </tr>
+            </table>
+        </section>
+        <section class="section" id="register">
+            <h2>Đăng ký khoá học</h2>
+            <div class="form-box">
+                <form action="">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" placeholder="Nhập họ tên">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Nhập email">
+                    <select name="course" id="course">
+                        <option value="html">HTML CSS Cơ bản</option>
+                        <option value="js">JavaScript Cơ bản</option>
+                        <option value="php">PHP Cơ bản</option>
+                    </select>
+                    <button type="submit">Gửi đăng ký</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            &copy; 2026 Web Starter Course
+        </footer>
+    </body>
 </html>
